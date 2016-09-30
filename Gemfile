@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#Record Tag Helper
+gem 'record_tag_helper', '~> 1.0'
 #Rolify
 gem 'rolify'
 #Pundit
