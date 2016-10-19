@@ -10,8 +10,8 @@ class ApplicationController < ActionController::Base
     User.find(session[:current_user_id])
   end
 
-  def user_not_autorized
-    flash[:alert] = "You are not Authorized to perform this action"
+  def user_not_authorized
+    flash[:alert] = "You are not authorized to perform this action."
     redirect_to(request.referrer || root_path)
   end
 
