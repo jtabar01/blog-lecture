@@ -42,6 +42,7 @@ GEM
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 12.0)
     arel (7.1.2)
+    bcrypt (3.1.11-x86-mingw32)
     builder (3.2.2)
     byebug (9.0.6)
     coffee-rails (4.2.1)
@@ -53,6 +54,12 @@ GEM
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
+    devise (4.2.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 5.1)
+      responders
+      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.14)
@@ -88,6 +95,7 @@ GEM
     nokogiri (1.6.8-x86-mingw32)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    orm_adapter (0.5.0)
     pkg-config (1.1.7)
     puma (3.6.0)
     pundit (1.1.0)
@@ -124,6 +132,8 @@ GEM
       ffi (>= 0.5.0)
     record_tag_helper (1.0.0)
       actionview (~> 5.x)
+    responders (2.3.0)
+      railties (>= 4.2.0, < 5.1)
     rolify (5.1.0)
     sass (3.4.22)
     sass-rails (5.0.6)
@@ -157,6 +167,8 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (3.0.2)
       execjs (>= 0.3.0, < 3)
+    warden (1.2.6)
+      rack (>= 1.0)
     wdm (0.1.1)
     web-console (3.3.1)
       actionview (>= 5.0)
@@ -175,6 +187,7 @@ DEPENDENCIES
   annotate
   byebug
   coffee-rails (~> 4.2)
+  devise
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
@@ -194,4 +207,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.13.2
+   1.13.6

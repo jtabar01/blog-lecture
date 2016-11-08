@@ -8,6 +8,9 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
+  #You’ll need to set up the default URL options for the Devise mailer in each
+  #environment. Here is a possible configuration for config/environments/development.rb:
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Show full error reports.
   config.consider_all_requests_local = true
